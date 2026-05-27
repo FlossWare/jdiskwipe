@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.flossware.jsecurity.disk;
+package org.flossware.jdiskwipe;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -280,17 +280,17 @@ public class CleanDisk {
      * Prints usage information.
      */
     static void printUsage() {
-        System.out.println("jSecurity Disk Wiper - Secure Free Space Overwrite Utility");
-        System.out.println("\nUsage: java -jar jSecurity.jar [options] <directory> [directory2 ...]");
+        System.out.println("jdiskwipe - Multi-threaded Disk Wiping Utility");
+        System.out.println("\nUsage: java -jar jdiskwipe.jar [options] <directory> [directory2 ...]");
         System.out.println("\nOptions:");
         System.out.println("  -t, --threads <count>      Number of worker threads (default: 4)");
         System.out.println("  -b, --buffer-size <bytes>  Buffer size in bytes (default: 10485760)");
         System.out.println("  -y, --yes                  Skip confirmation prompt");
         System.out.println("  -h, --help                 Show this help message");
         System.out.println("\nExamples:");
-        System.out.println("  java -jar jSecurity.jar /tmp/wipe");
-        System.out.println("  java -jar jSecurity.jar -t 8 -b 20971520 /tmp/wipe");
-        System.out.println("  java -jar jSecurity.jar -y /tmp/wipe1 /tmp/wipe2");
+        System.out.println("  java -jar jdiskwipe.jar /tmp/wipe");
+        System.out.println("  java -jar jdiskwipe.jar -t 8 -b 20971520 /tmp/wipe");
+        System.out.println("  java -jar jdiskwipe.jar -y /tmp/wipe1 /tmp/wipe2");
         System.out.println("\nWARNING: This tool overwrites free disk space. Use with caution!");
     }
 

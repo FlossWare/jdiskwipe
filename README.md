@@ -1,4 +1,4 @@
-# jsecurity
+# jdiskwipe
 
 Java-based security utilities for secure disk operations.
 
@@ -24,7 +24,7 @@ Java-based security utilities for secure disk operations.
 
 ## Description
 
-jsecurity is a disk wiping utility that securely overwrites free disk space with zero-filled files. It uses multiple worker threads to efficiently fill the target directory until the disk is full, making previously deleted data unrecoverable.
+jdiskwipe is a disk wiping utility that securely overwrites free disk space with zero-filled files. It uses multiple worker threads to efficiently fill the target directory until the disk is full, making previously deleted data unrecoverable.
 
 ## Features
 
@@ -49,14 +49,14 @@ Build the project using Maven:
 mvn clean package
 ```
 
-This creates `target/jsecurity-1.0.jar` with all dependencies.
+This creates `target/jdiskwipe-1.0.jar` with all dependencies.
 
 ## Usage
 
 ### Basic Usage
 
 ```bash
-java -jar target/jsecurity-1.0.jar <directory>
+java -jar target/jdiskwipe-1.0.jar <directory>
 ```
 
 The tool will:
@@ -80,22 +80,22 @@ Options:
 
 **Wipe a single directory with defaults:**
 ```bash
-java -jar target/jsecurity-1.0.jar /tmp/secure-wipe
+java -jar target/jdiskwipe-1.0.jar /tmp/secure-wipe
 ```
 
 **Use 8 threads with 20MB buffer:**
 ```bash
-java -jar target/jsecurity-1.0.jar -t 8 -b 20971520 /tmp/secure-wipe
+java -jar target/jdiskwipe-1.0.jar -t 8 -b 20971520 /tmp/secure-wipe
 ```
 
 **Wipe multiple directories:**
 ```bash
-java -jar target/jsecurity-1.0.jar /tmp/wipe1 /tmp/wipe2 /tmp/wipe3
+java -jar target/jdiskwipe-1.0.jar /tmp/wipe1 /tmp/wipe2 /tmp/wipe3
 ```
 
 **Skip confirmation (for scripts):**
 ```bash
-java -jar target/jsecurity-1.0.jar -y /tmp/secure-wipe
+java -jar target/jdiskwipe-1.0.jar -y /tmp/secure-wipe
 ```
 
 ## Safety Features
@@ -189,7 +189,7 @@ This project uses GitHub Actions for automated builds and deployment:
 - **Automated Tagging** - Creates git tags for each release
 - **Automated Deployment** - Publishes to packagecloud.io (flossware/java/maven2)
 
-View build status: https://github.com/FlossWare/jsecurity/actions
+View build status: https://github.com/FlossWare/jdiskwipe/actions
 
 ## Contributing
 

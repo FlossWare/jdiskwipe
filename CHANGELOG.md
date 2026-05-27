@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0] - 2026-05-27
+
+### Changed
+- **BREAKING:** Renamed project from `jdiskwipe` to `jdiskwipe` for clarity
+- **BREAKING:** Renamed Java package from `org.flossware.jdiskwipe.disk` to `org.flossware.jdiskwipe`
+- Updated all documentation to reflect new project name
+- Updated pom.xml artifactId, name, description, and URLs
+- Updated GitHub repository name to jdiskwipe
+
+### Why
+- "jdiskwipe" suggested a general Java security library
+- "jdiskwipe" clearly describes the utility's purpose: disk wiping/cleaning
+
 ## [1.5] - 2026-05-16
 
 ### Changed
@@ -29,9 +42,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Maven SCM integration for version control operations
 
 ### Changed
-- Artifact naming from jSecurity to jsecurity
+- Artifact naming from jSecurity to jdiskwipe
 - Version format from X.Y.Z to X.Y (matches jcollections project)
-- All documentation references updated from "jSecurity" to "jsecurity"
+- All documentation references updated from "jSecurity" to "jdiskwipe"
 - Enhanced .gitignore for Maven versioning artifacts
 
 ## [1.0] - 2026-05-15
@@ -70,7 +83,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2017-02-26
 
 ### Added
-- Initial release of jsecurity disk wiping utility
+- Initial release of jdiskwipe disk wiping utility
 - Multi-threaded disk space wiping with configurable worker threads
 - Configurable buffer sizes for performance tuning
 - Safety guards preventing wipe of critical system directories
@@ -86,8 +99,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Blocked dangerous system directories: `/`, `/bin`, `/boot`, `/dev`, `/etc`, `/lib`, `/lib64`, `/proc`, `/root`, `/sbin`, `/sys`, `/usr`, `/var`, `/home`, `/Users`
 - Windows protected paths: `C:\`, `C:\Windows`, `C:\Program Files`
 
-[1.5]: https://github.com/FlossWare/jsecurity/compare/v1.4...v1.5
-[1.4]: https://github.com/FlossWare/jsecurity/compare/v1.2...v1.4
-[1.2]: https://github.com/FlossWare/jsecurity/compare/v1.0...v1.2
-[1.0]: https://github.com/FlossWare/jsecurity/compare/v0.1...v1.0
-[0.1.0]: https://github.com/FlossWare/jsecurity/releases/tag/v0.1.0
+[1.5]: https://github.com/FlossWare/jdiskwipe/compare/v1.4...v1.5
+[1.4]: https://github.com/FlossWare/jdiskwipe/compare/v1.2...v1.4
+[1.2]: https://github.com/FlossWare/jdiskwipe/compare/v1.0...v1.2
+[1.0]: https://github.com/FlossWare/jdiskwipe/compare/v0.1...v1.0
+[0.1.0]: https://github.com/FlossWare/jdiskwipe/releases/tag/v0.1.0

@@ -1,6 +1,6 @@
-# Contributing to jsecurity
+# Contributing to jdiskwipe
 
-Thank you for your interest in contributing to jsecurity! This document provides guidelines and instructions for contributing to this project.
+Thank you for your interest in contributing to jdiskwipe! This document provides guidelines and instructions for contributing to this project.
 
 ## Table of Contents
 
@@ -35,12 +35,12 @@ Before contributing, ensure you have:
 1. Fork the repository on GitHub
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/jsecurity.git
-   cd jsecurity
+   git clone https://github.com/YOUR-USERNAME/jdiskwipe.git
+   cd jdiskwipe
    ```
 3. Add the upstream repository:
    ```bash
-   git remote add upstream https://github.com/FlossWare/jsecurity.git
+   git remote add upstream https://github.com/FlossWare/jdiskwipe.git
    ```
 
 ## Development Setup
@@ -56,7 +56,7 @@ mvn clean package
 This will:
 - Compile all source code
 - Run the full test suite
-- Generate the executable JAR at `target/jsecurity-1.0.jar`
+- Generate the executable JAR at `target/jdiskwipe-1.0.jar`
 
 ### Running Tests
 
@@ -101,7 +101,7 @@ Follow these conventions consistently throughout the codebase:
   - Classes: `PascalCase` (e.g., `FileWorker`, `CleanDisk`)
   - Methods/Variables: `camelCase` (e.g., `formatBytes`, `bufferSize`)
   - Constants: `UPPER_SNAKE_CASE` (e.g., `DEFAULT_BUFFER_SIZE`, `PREFIX`)
-  - Package: lowercase (e.g., `org.flossware.jsecurity.disk`)
+  - Package: lowercase (e.g., `org.flossware.jdiskwipe.disk`)
 
 - **Visibility**:
   - Use package-private (no modifier) for internal classes
@@ -333,10 +333,10 @@ Create a new issue with:
 **Environment:**
 - OS: [e.g., Ubuntu 22.04, Windows 11, macOS 13]
 - Java Version: [e.g., OpenJDK 11.0.16]
-- jsecurity Version: [e.g., 1.0]
+- jdiskwipe Version: [e.g., 1.0]
 
 **Steps to Reproduce:**
-1. Run command: `java -jar jsecurity-1.0.jar -t 4 /tmp/test`
+1. Run command: `java -jar jdiskwipe-1.0.jar -t 4 /tmp/test`
 2. Observe behavior...
 
 **Expected Behavior:**
@@ -363,8 +363,8 @@ If you have questions:
 
 ## License
 
-By contributing to jsecurity, you agree that your contributions will be licensed under the GNU General Public License v3.0 or later. See [LICENSE](LICENSE) for details.
+By contributing to jdiskwipe, you agree that your contributions will be licensed under the GNU General Public License v3.0 or later. See [LICENSE](LICENSE) for details.
 
 ---
 
-Thank you for contributing to jsecurity! Your efforts help make secure disk wiping accessible to everyone.
+Thank you for contributing to jdiskwipe! Your efforts help make secure disk wiping accessible to everyone.
