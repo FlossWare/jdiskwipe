@@ -60,6 +60,7 @@ jobs:
 
       - name: Deploy to packagecloud.io
         run: "mvn -DskipTests deploy"
+        continue-on-error: true
 
       - name: Checkin and tag to github
         run: "mvn scm:checkin scm:tag"
