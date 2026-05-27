@@ -30,8 +30,8 @@
   </properties>
 
   <scm>
-    <connection>scm:git:https://github.com/FlossWare/jdiskwipe.git</connection>
-    <developerConnection>scm:git:https://github.com/FlossWare/jdiskwipe.git</developerConnection>
+    <connection>scm:git:git@github.com:FlossWare/jdiskwipe.git</connection>
+    <developerConnection>scm:git:git@github.com:FlossWare/jdiskwipe.git</developerConnection>
     <url>https://github.com/FlossWare/jdiskwipe</url>
   </scm>
 
