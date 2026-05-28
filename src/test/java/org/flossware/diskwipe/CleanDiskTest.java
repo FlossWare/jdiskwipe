@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.flossware.jdiskwipe;
+package org.flossware.diskwipe;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
